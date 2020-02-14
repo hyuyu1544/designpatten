@@ -10,6 +10,7 @@ class Observer(metaclass=ABCMeta):
 
 
 class Observable:
+
     def __init__(self):
         self.observers = []
 
@@ -25,6 +26,7 @@ class Observable:
 
 
 class Target(Observable):
+
     def __init__(self):
         super().__init__()
         self._message = ''
@@ -45,6 +47,7 @@ class Work1(Observer):
 
 
 class Work2(Observer):
+
     def update(self, observable, message):
         if observable.get_message() == 'work2':
             print('go throught Work2.')

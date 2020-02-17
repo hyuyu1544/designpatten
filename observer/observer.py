@@ -1,5 +1,4 @@
 """Observer Pattern."""
-#
 from abc import ABCMeta, abstractmethod
 
 

@@ -1,3 +1,4 @@
 # designpatten
 
-1.observer patten
+1.observer pattern
+2.state pattern

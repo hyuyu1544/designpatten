@@ -1,4 +1,4 @@
-# designpatten
+# designpattern
 
 1.observer pattern
 

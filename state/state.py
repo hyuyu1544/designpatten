@@ -1,5 +1,5 @@
 """State Pattern."""
-from abc import ABCMeta, staticmethod
+from abc import ABCMeta, abstractmethod
 
 
 class Context(metaclass=ABCMeta):
@@ -10,7 +10,7 @@ class Context(metaclass=ABCMeta):
 
     def add_state(self, state):
         if state not in self.__states:
-            self.__state.append(state)
+            self.__states.append(state)
 
     def change_state(self, state):
         if state is None:
@@ -49,6 +49,6 @@ class State:
     def is_match(self, state_info):
         return False
 
-    @staticmethod
+    @abstractmethod
     def behavior(self):
         pass

@@ -16,7 +16,7 @@ class Strategy(metaclass=ABCMeta):
     """Strategy Interface."""
 
     def __init__(self, **kwargs):
-        self._kwargs = kwargs
+        self.kwargs = kwargs
 
     @abstractclassmethod
     def execute(self):

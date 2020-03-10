@@ -20,6 +20,6 @@ class Observable:
     def remove_observer(self, observer):
         self.observers.remove(observer)
 
-    def notify_observer(self, message='TEST'):
+    def notify_observer(self, message=0):
         for obj in self.observers:
             obj.update(self, message)
